@@ -55,7 +55,6 @@ class FetchNewsDetailsViewmodel(application: Application) : AndroidViewModel(app
 
         viewModelScope.launch {
             try {
-                // Use a valid date (e.g., articles from the last 30 days)
                 val calendar = Calendar.getInstance()
                 calendar.add(Calendar.DAY_OF_YEAR, -30)
                 val fromDate =
